@@ -6,8 +6,35 @@
     <title>Login Page</title></head>
     <link rel="stylesheet" herf="service.css">
     <body>
-        <p>
-            
-        </p>
+      <header>
+        <div class="header-container">
+          <div class="header-left">
+            <a href="#">
+              <i class="fa fa-ellipsis-v"></i>
+            </a>
+          </div>
+          <div class="header-center">
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="header-right">
+            <a href="#">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <script>
+       // Add responsive behavior to toggle the header-center links on mobile view
+const headerEllipsis = document.querySelector(".header-left i");
+const headerLinks = document.querySelector(".header-center");
+
+headerEllipsis.addEventListener("click", function () {
+  headerLinks.classList.toggle("show");
+});
+
+      </script>
     </body>
     </html>
